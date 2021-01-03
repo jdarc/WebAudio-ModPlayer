@@ -1,4 +1,4 @@
-# Amiga Module Player
+# WebAudio Module Player
 This is a JavaScript/WebAudio port of a Java 1.8 version that was a port of some C++ code I found, 
 details of which are lost to me it was so long ago.
 
