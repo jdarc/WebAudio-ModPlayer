@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #aabbcc;
+    background-color: #08080F;
+}
+
+canvas {
+    width: 100%;
+}
+
+#channels {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    bottom: 256px;
+    left: 0;
+    position: fixed;
+}
+
+#channels canvas {
+    flex-grow: 1;
+    height: 0;
+}
+
+#channels canvas:first-child {
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+#channels canvas:last-child {
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+#covers {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#covers img {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition-duration: 0.4s;
+}
+
+#covers img:hover {
+    transform: scale(1);
+}
