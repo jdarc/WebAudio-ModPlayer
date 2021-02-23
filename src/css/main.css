@@ -14,18 +14,21 @@ canvas {
 }
 
 #channels {
-    display: flex;
-    flex-direction: column;
-    top: 0;
-    right: 0;
-    bottom: 256px;
     left: 0;
+    right: 0;
+    bottom: 0;
+    top: 256px;
+    display: flex;
     position: fixed;
+    flex-direction: column;
+    background-color: #1f253d;
+    background-image: linear-gradient(rgba(0, 0, 0, .125) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, .125) 1px, transparent 1px);
+    background-size: 20px 20px, 20px 20px;
 }
 
 #channels canvas {
-    flex-grow: 1;
     height: 0;
+    flex-grow: 1;
 }
 
 #channels canvas:first-child {
@@ -39,12 +42,12 @@ canvas {
 }
 
 #covers {
-    display: flex;
-    justify-content: center;
-    position: fixed;
+    top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
+    display: flex;
+    position: fixed;
+    justify-content: center;
 }
 
 #covers img {

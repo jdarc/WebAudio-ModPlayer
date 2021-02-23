@@ -5,8 +5,12 @@ const drawStream = (ctx, stream, position) => {
     const width = ctx.canvas.width;
     const height = ctx.canvas.height;
 
+    ctx.clearRect(0, 0, width, height);
+
+    ctx.globalAlpha = 0.5;
     ctx.fillStyle = "#333355";
     ctx.fillRect(0, 0, width, height);
+    ctx.globalAlpha = 1.0;
 
     ctx.lineWidth = 0.5;
     ctx.strokeStyle = "#AAAAFF";
